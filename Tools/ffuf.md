@@ -120,16 +120,20 @@ $ ffuf -w wordlist.txt -u https://example.com/FUZZ -fc 404
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -fs 100
 ```
+### 15. Sử dùng tùy chọn `-fr` để lọc các phản hồi có nội dung khớp với biểu thức chính qui 
+```
+$ ffuf -u http://example.com/FUZZ -w ./wordlist -replay-proxy http://127.0.0.1:8888 -fr "not found"
+```
 ---
-### 15. Để ffuf gửi các request thông qua Burpsuite ta dùng tùy chọn `-replay-proxy`
+### 16. Để ffuf gửi các request thông qua Burpsuite ta dùng tùy chọn `-replay-proxy`
 ```
 $ ffuf -u http://example.com/FUZZ -w ./wordlist -replay-proxy http://127.0.0.1:8888
 ```
-### 16. Sử lý đầu ra của ffuf bằng tùy chọn `-s` kết hợp với lệnh `tee`
+### 17. Sử lý đầu ra của ffuf bằng tùy chọn `-s` kết hợp với lệnh `tee`
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -s | tee output.txt
 ```
-### 17. Fuzz các request bằng tùy chọn `-request`
+### 18. Fuzz các request bằng tùy chọn `-request`
 - Đầu tiên ta cần dùng Burpsuite để chặn các request được gửi đến máy chủ
 
 - Tiếp theo ta chọn 1 request > chuột phải > copy to file
@@ -138,7 +142,13 @@ $ ffuf -w wordlist.txt -u https://example.com/FUZZ -s | tee output.txt
 ```
 $ ffuf -w wordlist.txt -request file.txt
 ```
-### 18. Lưu đầu ra vào 1 file bằng tùy chọn `-o`
+### 19. Lưu đầu ra vào 1 file bằng tùy chọn `-o`
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -o output.txt
 ```
+### 20. Fuzzing POST data với 2 tùy chọn `-X` và `-d`
+```
+$ ffuf -w wordlist.txt -X POST -d "email=admin@gmail.com&FUZZ=test" -u http://example.com/
+```
+- **Note:** Tùy chọn `-X` dùng để chỉ định một phương thức khác
+
