@@ -39,10 +39,22 @@ $ ffuf -u https://example.com/FUZZ -w ./wordlist -recursion -e .php
 ```
 $ ffuf -w wordlist.txt:F1 -u http://example.com/F1
 ```
-- Để chỉ định fuzz nhiều vị trí với nhiều danh sách từ ta sẽ thêm nối thêm 1 danh sách từ khác vào dối số của tùy chọn `-w`
+- Để chỉ định fuzz nhiều vị trí với nhiều danh sách từ ta sẽ nối thêm 1 danh sách từ khác vào đối số của tùy chọn `-w`
 ```
 $ ffuf -w ./wordlist1.txt:F1,./wordlist2.txt:F2 -u http://example.com/F1/F2
 ```
+- **Note:** Vị trí của danh sách từ sẽ kiểm soát cách mà ffuf gửi các request đến máy chủ
+- **Ví dụ:** ta có 1 danh sách từ gồm 1000 tên miền đặt tên là `domain.txt` và 1 danh sách từ gồm 1000 tên thư mục đặt tên là `folder.txt`. Nếu ta đảo vị trí của các danh sách từ như sau
+```
+$ ffuf -w ./folder.txt:FOLDER,./domain.txt:HOST -u http://HOST/FOLDER
+```
+- Điều này sẽ khiến ffuf kết hợp 1000 tên thư mục của danh sách từ `folder.txt` với 1 tên miền trong danh sách từ `domain.txt`. Và sau đó thử tiếp 1000 tên thư mục với tên miền thứ hai trong danh sách từ `domain.txt`. Và nó sẽ lặp đi lặp lại cho đến tên miền cuối cùng (khá giống kiểu tấn công `Cluster bomb` trong tab intruder của burpsuite)
+- Việc này sẽ khiến ffuf gửi 1000 request đến 1 máy chủ trong một khoảng thời gian rất ngắn. Đôi khi điều này sẽ dẫn đến máy chủ mục tiêu bị quá tải - DDOS (điều này sẽ bị cấm)  
+- Tiếp theo ta đảo vị trí của 2 danh sách từ
+```
+$ ffuf -w ./domain.txt:HOST,./folder.txt:FOLDER -u http://HOST/FOLDER
+```
+- Điều này sẽ khiến ffuf gửi 1 thư mục của danh sách từ `folder.txt` đến 1000 tên miền khác nhau trong danh sách từ `domain.txt`, tiếp theo nó sẽ gửi tên thư mục thứ 2 cho 1000 tên miền. Bằng cách này ta có thể gửi nhiều request hơn nhưng không làm quá tải máy chủ 
 
 
 
