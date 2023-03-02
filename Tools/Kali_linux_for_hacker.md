@@ -83,6 +83,6 @@ SYNOPSIS
        ls [OPTION]... [FILE]...
 ...
 ```
-<span color='red'>test</span>
+<span style=color:red>test</span>
 
 
