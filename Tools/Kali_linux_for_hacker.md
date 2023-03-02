@@ -6,7 +6,11 @@
 
 ---
 ## Các lệnh cơ bản
-- pwd
+1. `pwd`
+```
+$ pwd
+/home/kali
+```
 - cd 
 - ls, tìm tất cả file ẩn với ls
 - mkdir, rmdir
