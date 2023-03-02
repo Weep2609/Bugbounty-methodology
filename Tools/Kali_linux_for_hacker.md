@@ -5,4 +5,14 @@
 - Kali Linux Penetration Testing Bible
 
 ---
+## Các lệnh cơ bản
+- pwd
+- cd 
+- ls, tìm tất cả file ẩn với ls
+- mkdir, rmdir
+- cp, rm, mv, locate
+- updatedb
+- passwd
+- man
+
 
