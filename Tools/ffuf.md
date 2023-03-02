@@ -138,7 +138,7 @@ $ ffuf -w wordlist.txt -u https://example.com/FUZZ -s | tee output.txt
 
 - Tiếp theo ta chọn 1 request > chuột phải > copy to file
 
-- Lưu lại trong 1 file.txt và chỉ định vị trí cần fuzz trong file vừa lưu bằng từ khóa `FUZZ`
+- Lưu lại trong 1 file và chỉ định vị trí cần fuzz trong file vừa lưu bằng từ khóa `FUZZ`
 ```
 $ ffuf -w wordlist.txt -request file.txt
 ```
