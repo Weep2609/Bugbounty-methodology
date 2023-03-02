@@ -11,10 +11,13 @@
 $ pwd
 /home/kali
 ```
-2. `cd` sẽ di chuyển đến đường dẫn mục tiêu
+2. `cd` sẽ di chuyển đến đường dẫn mục tiêu. Sử dụng `cd ..` để lùi lại 1 thư mục
 ```
-kali@kali ~ cd /usr/bin
-kali@kali /usr/bin
+kali@kali ~
+$ cd /usr/bin
+kali@kali /usr/bin 
+$ cd ..
+kali@kali /usr
 ```
 - **Note**: / là thư mục gốc
 3. `ls` sẽ liệt kê tất cả file và thư mục trong thư mục hiện tại. Tìm tất cả file ẩn với `ls -la`
@@ -24,7 +27,15 @@ Music  Downloads  test.txt
 $ ls -la
 Music  Downloads  test.txt .bin .source
 ```
-- mkdir, rmdir
+4. `mkdir` để tạo 1 thư mục mới, `rmdir` để xóa 1 thư mục trống
+```
+$ mkdir subdomain
+$ ls
+subdomain
+$ rmdir subdomain
+$ ls
+
+```
 - cp, rm, mv, locate
 - updatedb
 - passwd
