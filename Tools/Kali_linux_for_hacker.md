@@ -20,14 +20,14 @@ $ cd ..
 kali@kali /usr
 ```
 - **Note**: / là thư mục gốc
-3. `ls` sẽ liệt kê tất cả file và thư mục trong thư mục hiện tại. Tìm tất cả file ẩn với `ls -la`
+### 3. `ls` sẽ liệt kê tất cả file và thư mục trong thư mục hiện tại. Tìm tất cả file ẩn với `ls -la`
 ```
 $ ls 
 Music  Downloads  test.txt
 $ ls -la
 Music  Downloads  test.txt .bin .source
 ```
-4. `mkdir` để tạo 1 thư mục mới, `rmdir` để xóa 1 thư mục trống
+### 4. `mkdir` để tạo 1 thư mục mới, `rmdir` để xóa 1 thư mục trống
 ```
 $ mkdir subdomain
 $ ls
@@ -36,7 +36,7 @@ $ rmdir subdomain
 $ ls
 
 ```
-5. `cp` để copy 1 file, `rm` để xóa file, `mv` để di chuyển file sang 1 đường dẫn khác, `locate` để tìm vị trí đường dẫn của file
+### 5. `cp` để copy 1 file, `rm` để xóa file, `mv` để di chuyển file sang 1 đường dẫn khác, `locate` để tìm vị trí đường dẫn của file
 ```
 $ cat > test.txt
 hello guy
@@ -62,8 +62,8 @@ $ ls /usr/bin
 $ locate test123.txt # <----- định vị vị trí file hiện tại
 /usr/bin/test123.txt
 ```
-6. `updatedb` sẽ cập nhật lại cơ sở dữ liệu các đường dẫn trong hệ thống
-7. `passwd` sẽ đổi password của user
+### 6. `updatedb` sẽ cập nhật lại cơ sở dữ liệu các đường dẫn trong hệ thống
+### 7. `passwd` sẽ đổi password của user
 ```
 $ updatedb
 $ passwd
@@ -71,7 +71,7 @@ Enter new UNIX password:
 Retype new UNIX password:
 password: password update successfully
 ```
-8. `man` dùng để mở bảng hướng dẫn sử dụng từng lệnh cụ thể trong unix. Để thoát ra ta ấn phím "q"
+### 8. `man` dùng để mở bảng hướng dẫn sử dụng từng lệnh cụ thể trong unix. Để thoát ra ta ấn phím "q"
 ```
 $ man ls # <----- mở bảng hướng dẫn dùng lệnh ls
 LS(1)                                                            User Commands                                                            LS(1)
