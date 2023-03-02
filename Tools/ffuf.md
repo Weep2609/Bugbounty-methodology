@@ -18,7 +18,7 @@
 - Đầu ra của nó ta có thể thiết lập là `.json`, `.txt`,... hoặc cho nó chạy thông qua Burpsuite
 
 - Tốc độ fuzzing của nó rất nhanh vì được viết bằng ngôn ngữ lập trình "go" và có rất nhiều tùy chọn để sử dụng
-## Cách sử dụng cơ bản
+## A. Cách sử dụng cơ bản
 ### 1. Cách dùng cơ bản
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ
@@ -152,7 +152,7 @@ $ ffuf -w wordlist.txt -X POST -d "email=admin@gmail.com&FUZZ=test" -u http://ex
 ```
 - **Note:** Tùy chọn `-X` dùng để chỉ định một phương thức khác
 ---
-## Cách sử dụng nâng cao của ffuf
+## B. Cách sử dụng nâng cao của ffuf
 
 
 
