@@ -63,5 +63,11 @@ $ ffuf -w ./domain.txt:HOST,./folder.txt:FOLDER -u http://HOST/FOLDER
 ```
 - Điều này sẽ khiến ffuf gửi 1 thư mục của danh sách từ `folder.txt` đến 1000 tên miền khác nhau trong danh sách từ `domain.txt`, tiếp theo nó sẽ gửi tên thư mục thứ 2 cho 1000 tên miền. Bằng cách này ta có thể gửi nhiều request hơn nhưng không làm quá tải máy chủ 
 
+- Nếu gặp lỗi khi sử dụng nhiều danh sách từ trong đối số của tùy chọn `-w` thì hãy dùng tùy chọn `-w` nhiều lần
+```
+$ ffuf -w ./domain.txt:HOST -w ./folder.txt:FOLDER -u http://HOST/FOLDER
+```
+
+
 
 
