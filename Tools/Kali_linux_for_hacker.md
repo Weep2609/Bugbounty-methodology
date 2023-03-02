@@ -36,7 +36,33 @@ $ rmdir subdomain
 $ ls
 
 ```
-- cp, rm, mv, locate
+5. `cp` để copy 1 file, `rm` để xóa file, `mv` để di chuyển file sang 1 đường dẫn khác, `locate` để tìm vị trí đường dẫn của file
+```
+$ cat > test.txt
+hello guy
+$ ls 
+test.txt
+$ mkdir folder
+$ ls
+test.txt  folder
+$ cp test.txt folder
+$ ls folder
+test.txt
+$ rm test.txt
+$ ls
+folder
+$ mv ./folder/test.txt ./folder/test123.txt
+$ ls folder
+test123.txt
+$ mv ./folder/test123.txt /usr/bin
+$ ls
+
+$ ls /usr/bin
+...  test123.txt
+$ locate test123.txt
+/usr/bin/test123.txt
+```
+
 - updatedb
 - passwd
 - man
