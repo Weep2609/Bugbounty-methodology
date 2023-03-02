@@ -69,7 +69,7 @@ $ ffuf -w ./domain.txt:HOST -w ./folder.txt:FOLDER -u http://HOST/FOLDER
 ```
 ### 5. Cung cấp cookie cho ffuf khi fuzz các url cần xác thực bằng cách sử dụng tùy chọn `-b`
 ```
-$ ffuf -w ./wordlist.txt -u https://example.com/user/settings/FUZZ -b sessionID=fdsfdsfdsffbsvdwe;admin=False
+$ ffuf -w ./wordlist.txt -u https://example.com/user/settings/FUZZ -b "sessionID=fdsfdsfdsffbsvdwe;admin=False"
 ```
 ### 6. Chỉ định header gửi kèm với request bằng cách dùng tùy chọn `-H`
 ```
