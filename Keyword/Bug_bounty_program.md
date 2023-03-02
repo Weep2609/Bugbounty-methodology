@@ -30,5 +30,25 @@
 - Theo quan điểm của 1 hacker thì các nền tảng tiền thưởng lỗi là nơi để tập trung gửi báo cáo, được công nhận bởi cộng đồng và được trả tiền thưởng
 
 - **Các trang web tiền thưởng lỗi được lưu trữ độc lập mà không cần đến các nền tảng đó thường là các công ty lớn như: google, facebook,...** 
+## 6. Phạm vi, khoản thanh toán và thời gian phản hồi
+- Khi chọn 1 chương trình tiền thưởng lỗi trên các nền tảng ta cần chú ý vào 3 điểm sau
 
+- a) **Phạm vi:** chỉ định những gì được phép hoặc không được phép. 
 
+- Có 2 loại phạm vi chính là tài sản và lỗ hổng
+
+- Đầu tiên là phạm vi tài sản, nó sẽ cho bạn biết những tên miền phụ, sản phẩm, ứng dụng nào được phép hack
+
+- Phạm vi lỗ hổng cho bạn biết những lỗ hổng nào công ty sẽ chấp nhận là lỗi hợp lệ
+
+- b) **khoản thanh toán:** có 2 loại chương trình thanh toán đó là chương trình tiết lộ lỗ hổng VDP và chương trình tiền thưởng lỗi
+
+- VDP là chương trình chỉ dành cho việc tìm điểm danh tiếng, nghĩa là họ không trả tiền cho mỗi phát hiện mà bạn tìm được trong ứng dụng của họ
+
+- Các chương trình tiền thưởng lỗi sẽ cung cấp tiền thưởng cho mỗi lỗ hổng hợp lệ mà tin tặc tìm được
+
+- c) **Thời gian phản hồi:** là khoản thời gian mà các công ty sẽ xử lý và giải quyết các báo cáo của bạn, nó có thể là vài ngày, vài tuần, vài tháng
+## 7. Chương trình riêng và công khai
+- Các chương trình công khai là chương trình dành cho tất cả mọi người, bất cứ ai cũng có thể hack và gửi lỗi cho chương trình
+
+- Các chương trình riêng tư là các chương trình chỉ dành cho các tin tặc được mời
