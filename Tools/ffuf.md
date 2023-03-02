@@ -43,8 +43,8 @@ $ ffuf -w wordlist.txt:F1 -u http://example.com/F1
 ```
 $ ffuf -w ./wordlist1.txt:F1,./wordlist2.txt:F2 -u http://example.com/F1/F2
 ```
-- **Note:** Vị trí của danh sách từ sẽ kiểm soát cách mà ffuf gửi các request đến máy chủ
-- **Ví dụ:** ta có 1 danh sách từ gồm 1000 tên miền đặt tên là `domain.txt` và 1 danh sách từ gồm 1000 tên thư mục đặt tên là `folder.txt`. Nếu ta đảo vị trí của các danh sách từ như sau
+**Note:** Vị trí của danh sách từ sẽ kiểm soát cách mà ffuf gửi các request đến máy chủ
+**Ví dụ:** ta có 1 danh sách từ gồm 1000 tên miền đặt tên là `domain.txt` và 1 danh sách từ gồm 1000 tên thư mục đặt tên là `folder.txt`. Nếu ta đảo vị trí của các danh sách từ như sau
 ```
 $ ffuf -w ./folder.txt:FOLDER,./domain.txt:HOST -u http://HOST/FOLDER
 ```
