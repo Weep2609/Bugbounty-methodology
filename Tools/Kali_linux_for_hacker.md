@@ -45,21 +45,21 @@ test.txt
 $ mkdir folder
 $ ls
 test.txt  folder
-$ cp test.txt folder
+$ cp test.txt folder # sao chép file test.txt sang thư mục folder
 $ ls folder
 test.txt
-$ rm test.txt
+$ rm test.txt # xóa file test.txt
 $ ls
 folder
-$ mv ./folder/test.txt ./folder/test123.txt
+$ mv ./folder/test.txt ./folder/test123.txt # Nếu dùng lệnh mv với 1 file mà không thay đổi đường dẫn cho đối số thứ hai thì nó sẽ đổi tên file
 $ ls folder
 test123.txt
-$ mv ./folder/test123.txt /usr/bin
+$ mv ./folder/test123.txt /usr/bin # Di chuyển file sang 1 đường dẫn khác
 $ ls
 
 $ ls /usr/bin
 ...  test123.txt
-$ locate test123.txt
+$ locate test123.txt # định vị vị trí file hiện tại
 /usr/bin/test123.txt
 ```
 
