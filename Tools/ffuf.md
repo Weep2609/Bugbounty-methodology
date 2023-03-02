@@ -75,6 +75,10 @@ $ ffuf -w ./wordlist.txt -u https://example.com/user/settings/FUZZ -b "sessionID
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -H "X-Forwarded-For: 127.0.0.1" 
 ```
+- Ngoài ra ta còn có thể dùng tùy chọn `-H` fuzz các header
+```
+$ ffuf -w wordlist.txt -u https://example.com -H "User-Agent: FUZZ"
+```
 ### 7. Sử dụng chế độ silent để chỉ hiển thị kết quả bằng cách dùng tùy chọn `-s`
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -s
