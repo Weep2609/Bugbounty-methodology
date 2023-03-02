@@ -6,12 +6,12 @@
 
 ---
 ## Các lệnh cơ bản
-1. `pwd` sẽ hiển thị đường đẫn thư mục hiện tại
+### 1. `pwd` sẽ hiển thị đường đẫn thư mục hiện tại
 ```
 $ pwd
 /home/kali
 ```
-2. `cd` sẽ di chuyển đến đường dẫn mục tiêu. Sử dụng `cd ..` để lùi lại 1 thư mục
+### 2. `cd` sẽ di chuyển đến đường dẫn mục tiêu. Sử dụng `cd ..` để lùi lại 1 thư mục
 ```
 kali@kali ~
 $ cd /usr/bin
@@ -83,6 +83,6 @@ SYNOPSIS
        ls [OPTION]... [FILE]...
 ...
 ```
-<span style=color:red>test</span>
+
 
 
