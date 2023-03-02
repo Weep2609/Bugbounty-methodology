@@ -71,9 +71,9 @@ Enter new UNIX password:
 Retype new UNIX password:
 password: password update successfully
 ```
-8. `man` dùng để mở bảng hướng dẫn sử dụng từng lệnh cụ thể trong unix
+8. `man` dùng để mở bảng hướng dẫn sử dụng từng lệnh cụ thể trong unix. Để thoát ra ta ấn phím "q"
 ```
-$ man ls
+$ man ls # <----- mở bảng hướng dẫn dùng lệnh ls
 LS(1)                                                            User Commands                                                            LS(1)
 
 NAME
