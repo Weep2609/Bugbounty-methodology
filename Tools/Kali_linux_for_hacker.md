@@ -6,13 +6,24 @@
 
 ---
 ## Các lệnh cơ bản
-1. `pwd`
+1. `pwd` sẽ hiển thị đường đẫn thư mục hiện tại
 ```
 $ pwd
 /home/kali
 ```
-- cd 
-- ls, tìm tất cả file ẩn với ls
+2. `cd` sẽ di chuyển đến đường dẫn mục tiêu
+```
+kali@kali ~ cd /usr/bin
+kali@kali /usr/bin
+```
+- **Note**: / là thư mục gốc
+3. `ls` sẽ liệt kê tất cả file và thư mục trong thư mục hiện tại. Tìm tất cả file ẩn với `ls -la`
+```
+$ ls 
+Music  Downloads  test.txt
+$ ls -la
+Music  Downloads  test.txt .bin .source
+```
 - mkdir, rmdir
 - cp, rm, mv, locate
 - updatedb
