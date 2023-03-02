@@ -67,7 +67,56 @@ $ ffuf -w ./domain.txt:HOST,./folder.txt:FOLDER -u http://HOST/FOLDER
 ```
 $ ffuf -w ./domain.txt:HOST -w ./folder.txt:FOLDER -u http://HOST/FOLDER
 ```
+### 5. Cung cấp cookie cho ffuf khi fuzz các url cần xác thực bằng cách sử dụng tùy chọn `-b`
+```
+$ ffuf -w ./wordlist.txt -u https://example.com/user/settings/FUZZ -b sessionID=fdsfdsfdsffbsvdwe;admin=False
+```
+### 6. Chỉ định header gửi kèm với request bằng cách dùng tùy chọn `-H`
+```
+$ ffuf -w wordlist.txt -u https://example.com/FUZZ -H "X-Forwarded-For: 127.0.0.1" 
+```
+### 7. Sử dụng chế độ silent để chỉ hiển thị kết quả bằng cách dùng tùy chọn `-s`
+```
+$ ffuf -w wordlist.txt -u https://example.com/FUZZ -s
+```
+### 8. Giới hạn số request được gửi mỗi 1s ta dùng tùy chọn `-rate`
+- **Ví dụ:** gửi 5 request mỗi 1s 
+```
+$ ffuf -w wordlist.txt -u https://example.com/FUZZ -rate 5
+```
+### 9. Chỉ định độ trễ giữa mỗi request được gửi đến máy chủ bằng cách dùng tùy chọn `-p`
+- **Ví dụ:** chỉ định độ trễ 2s giữa mỗi request
+```
+$ ffuf -w wordlist.txt -u https://example.com/FUZZ -p 2
+```
+### 10. Sử dụng tùy chọn `-mc` để giới hạn tìm kiếm trong các mã phản hồi được chỉ định
+```
+$ ffuf -w wordlist.txt -u https://example.com/FUZZ -mc 200,403
+```
+### 11. Sử dụng tùy chọn `-fw` để lọc số lượng từ có trong 1 trang
+- **Ví dụ:** lọc các response có độ dài chỉ có 1 từ được trả về từ máy chủ 
+```
+$ ffuf -w wordlist.txt -u https://example.com/FUZZ -fw 1
+```
+### 12. Sử dụng tùy chọn `-fc` để lọc mã phản hồi được trả về
+- **Ví dụ:** Loại bỏ các mã phản hồi 404 
+```
+$ ffuf -w wordlist.txt -u https://example.com/FUZZ -fc 404
+```
+### 13. Để ffuf gửi các request thông qua Burpsuite ta dùng tùy chọn `-replay-proxy`
+```
+$ ffuf -u http://example.com/FUZZ -w ./wordlist -replay-proxy http://127.0.0.1:8888
+```
+### 14. Sử lý đầu ra của ffuf bằng tùy chọn `-s` kết hợp với lệnh `tee`
+```
+$ ffuf -w wordlist.txt -u https://example.com/FUZZ -s | tee output.txt
+```
+### 15. Fuzz các request bằng tùy chọn `-request`
+- Đầu tiên ta cần dùng Burpsuite để chặn các request được gửi đến máy chủ
 
+- Tiếp theo ta chọn 1 request > chuột phải > copy to file
 
-
-
+- Lưu lại trong 1 file.txt và chỉ định vị trí cần fuzz trong file vừa lưu bằng từ khóa `FUZZ`
+```
+$ ffuf -w wordlist.txt -request file.txt
+```
