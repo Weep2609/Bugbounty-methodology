@@ -120,3 +120,7 @@ $ ffuf -w wordlist.txt -u https://example.com/FUZZ -s | tee output.txt
 ```
 $ ffuf -w wordlist.txt -request file.txt
 ```
+### 16. Lưu đầu ra vào 1 file bằng tùy chọn `-o`
+```
+$ ffuf -w wordlist.txt -u https://example.com/FUZZ -o output.txt
+```
