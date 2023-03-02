@@ -83,6 +83,8 @@ $ ffuf -w wordlist.txt -u https://example.com -H "User-Agent: FUZZ"
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -s
 ```
+---
+### Tốc độ
 ### 8. Giới hạn số request được gửi mỗi 1s ta dùng tùy chọn `-rate`
 - **Ví dụ:** gửi 5 request mỗi 1s 
 ```
@@ -97,29 +99,37 @@ $ ffuf -w wordlist.txt -u https://example.com/FUZZ -p 2
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -p 1 -t 5
 ```
+---
+### Lọc và tìm kiếm
 ### 11. Sử dụng tùy chọn `-mc` để giới hạn tìm kiếm trong các mã phản hồi được chỉ định
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -mc 200,403
 ```
-### 12. Sử dụng tùy chọn `-fw` để lọc số lượng từ có trong 1 trang
+### 12. Sử dụng tùy chọn `-fw` để lọc số lượng từ có trong phản hồi
 - **Ví dụ:** lọc các response có độ dài chỉ có 1 từ được trả về từ máy chủ 
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -fw 1
 ```
 ### 13. Sử dụng tùy chọn `-fc` để lọc mã phản hồi được trả về
-- **Ví dụ:** Loại bỏ các mã phản hồi 404 
+- **Ví dụ:** Lọc các mã phản hồi 404 
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -fc 404
 ```
-### 14. Để ffuf gửi các request thông qua Burpsuite ta dùng tùy chọn `-replay-proxy`
+### 14. Sử dụng tùy chọn `-fs` để lọc size (kích cỡ file) của phản hồi
+- **Ví dụ:** Lọc các response có size là 100
+```
+$ ffuf -w wordlist.txt -u https://example.com/FUZZ -fs 100
+```
+---
+### 15. Để ffuf gửi các request thông qua Burpsuite ta dùng tùy chọn `-replay-proxy`
 ```
 $ ffuf -u http://example.com/FUZZ -w ./wordlist -replay-proxy http://127.0.0.1:8888
 ```
-### 15. Sử lý đầu ra của ffuf bằng tùy chọn `-s` kết hợp với lệnh `tee`
+### 16. Sử lý đầu ra của ffuf bằng tùy chọn `-s` kết hợp với lệnh `tee`
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -s | tee output.txt
 ```
-### 16. Fuzz các request bằng tùy chọn `-request`
+### 17. Fuzz các request bằng tùy chọn `-request`
 - Đầu tiên ta cần dùng Burpsuite để chặn các request được gửi đến máy chủ
 
 - Tiếp theo ta chọn 1 request > chuột phải > copy to file
@@ -128,7 +138,7 @@ $ ffuf -w wordlist.txt -u https://example.com/FUZZ -s | tee output.txt
 ```
 $ ffuf -w wordlist.txt -request file.txt
 ```
-### 17. Lưu đầu ra vào 1 file bằng tùy chọn `-o`
+### 18. Lưu đầu ra vào 1 file bằng tùy chọn `-o`
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -o output.txt
 ```
