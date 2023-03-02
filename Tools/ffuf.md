@@ -16,11 +16,11 @@
 - Đầu ra của nó ta có thể thiết lập là `.json`, `.txt`,... hoặc cho nó chạy thông qua Burpsuite
 - Tốc độ fuzzing của nó rất nhanh vì được viết bằng ngôn ngữ lập trình "go" và có rất nhiều tùy chọn để sử dụng
 ### Cách sử dụng cơ bản
-1. Cách dùng cơ bản
+#### 1. Cách dùng cơ bản
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ
 ```
-2. Sử dụng tùy chọn `recursion` để liệt kê đệ quy 
+#### 2. Sử dụng tùy chọn `recursion` để liệt kê đệ quy 
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -recursion
 ```
@@ -30,4 +30,7 @@ $ ffuf -w wordlist.txt -u https://example.com/FUZZ -recursion-depth 2
 ```
 - **Note:** liệt kê đệ quy là thực hiện lại cùng 1 hành động nhưng trong 1 ngữ cảnh khác
 - **Ví dụ:** fuzz url: `http://example.com/FUZZ` ta tìm được thư mục `admin`, thì nếu có sử dụng tùy chọn `recursion` thì nó sẽ lấy đường dẫn url: `http://example.com/admin/FUZZ` để tiếp tục tìm thư mục con của `admin` cho đến khi có kết quả. Giả sử ta tìm được tiếp 1 thư mục con của `admin` là `setting` thì kết quả mà ffuf trả về sẽ là `http://example.com/admin/setting`. Đó chính là liệt kê đệ quy
+#### te
+
+
 
