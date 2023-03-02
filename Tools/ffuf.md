@@ -84,7 +84,7 @@ $ ffuf -w wordlist.txt -u https://example.com -H "User-Agent: FUZZ"
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -s
 ```
 ---
-### Tốc độ
+### -----> Tốc độ <-----
 ### 8. Giới hạn số request được gửi mỗi 1s ta dùng tùy chọn `-rate`
 - **Ví dụ:** gửi 5 request mỗi 1s 
 ```
@@ -100,7 +100,7 @@ $ ffuf -w wordlist.txt -u https://example.com/FUZZ -p 2
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -p 1 -t 5
 ```
 ---
-### Lọc và tìm kiếm
+### -----> Lọc và tìm kiếm <-----
 ### 11. Sử dụng tùy chọn `-mc` để giới hạn tìm kiếm trong các mã phản hồi được chỉ định
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -mc 200,403
