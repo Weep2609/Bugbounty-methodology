@@ -62,9 +62,26 @@ $ ls /usr/bin
 $ locate test123.txt # <----- định vị vị trí file hiện tại
 /usr/bin/test123.txt
 ```
+6. `updatedb` sẽ cập nhật lại cơ sở dữ liệu các đường dẫn trong hệ thống
+7. `passwd` sẽ đổi password của user
+```
+$ updatedb
+$ passwd
+Enter new UNIX password:
+Retype new UNIX password:
+password: password update successfully
+```
+8. `man` dùng để mở bảng hướng dẫn sử dụng từng lệnh cụ thể trong unix
+```
+$ man ls
+LS(1)                                                            User Commands                                                            LS(1)
 
-- updatedb
-- passwd
-- man
+NAME
+       ls - list directory contents
+
+SYNOPSIS
+       ls [OPTION]... [FILE]...
+...
+```
 
 
