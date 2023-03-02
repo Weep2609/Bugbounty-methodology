@@ -93,29 +93,33 @@ $ ffuf -w wordlist.txt -u https://example.com/FUZZ -rate 5
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -p 2
 ```
-### 10. Sử dụng tùy chọn `-mc` để giới hạn tìm kiếm trong các mã phản hồi được chỉ định
+### 10. Chỉ định số luồng bằng cách sử dụng tùy chọn `-t`
+```
+$ ffuf -w wordlist.txt -u https://example.com/FUZZ -p 1 -t 5
+```
+### 11. Sử dụng tùy chọn `-mc` để giới hạn tìm kiếm trong các mã phản hồi được chỉ định
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -mc 200,403
 ```
-### 11. Sử dụng tùy chọn `-fw` để lọc số lượng từ có trong 1 trang
+### 12. Sử dụng tùy chọn `-fw` để lọc số lượng từ có trong 1 trang
 - **Ví dụ:** lọc các response có độ dài chỉ có 1 từ được trả về từ máy chủ 
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -fw 1
 ```
-### 12. Sử dụng tùy chọn `-fc` để lọc mã phản hồi được trả về
+### 13. Sử dụng tùy chọn `-fc` để lọc mã phản hồi được trả về
 - **Ví dụ:** Loại bỏ các mã phản hồi 404 
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -fc 404
 ```
-### 13. Để ffuf gửi các request thông qua Burpsuite ta dùng tùy chọn `-replay-proxy`
+### 14. Để ffuf gửi các request thông qua Burpsuite ta dùng tùy chọn `-replay-proxy`
 ```
 $ ffuf -u http://example.com/FUZZ -w ./wordlist -replay-proxy http://127.0.0.1:8888
 ```
-### 14. Sử lý đầu ra của ffuf bằng tùy chọn `-s` kết hợp với lệnh `tee`
+### 15. Sử lý đầu ra của ffuf bằng tùy chọn `-s` kết hợp với lệnh `tee`
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -s | tee output.txt
 ```
-### 15. Fuzz các request bằng tùy chọn `-request`
+### 16. Fuzz các request bằng tùy chọn `-request`
 - Đầu tiên ta cần dùng Burpsuite để chặn các request được gửi đến máy chủ
 
 - Tiếp theo ta chọn 1 request > chuột phải > copy to file
@@ -124,7 +128,7 @@ $ ffuf -w wordlist.txt -u https://example.com/FUZZ -s | tee output.txt
 ```
 $ ffuf -w wordlist.txt -request file.txt
 ```
-### 16. Lưu đầu ra vào 1 file bằng tùy chọn `-o`
+### 17. Lưu đầu ra vào 1 file bằng tùy chọn `-o`
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -o output.txt
 ```
