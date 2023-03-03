@@ -14,4 +14,7 @@
 - **Top 8: Software and Data Integrity Failures**
 - **Top 9: Security Logging and Monitoring Failures**
 - **Top 10: Server-Side Request Forgery**
+## Giải thích top 10 lỗ hổng của OWASP
+### Top 1: Broken Access Control
+
 
