@@ -124,16 +124,24 @@ $ ffuf -w wordlist.txt -u https://example.com/FUZZ -fs 100
 ```
 $ ffuf -u http://example.com/FUZZ -w ./wordlist -replay-proxy http://127.0.0.1:8888 -fr "not found"
 ```
+### 16. Lọc tự động bằng cách gửi trước những chuỗi ngẫu nhiên để nắm bắt mã phản hồi, độ dài, số từ và từ đó sẽ lọc bỏ nó khỏi kết quả tìm kiếm. Để làm được như vậy ta dùng tùy chọn `-ac`
+```
+$ ffuf -u http://example.com/FUZZ -w ./wordlist -ac
+```
+### 17. Thay vì gửi các chuỗi ngẫu nhiên thì ta có thể tùy chỉnh 1 từ khóa để kiểm tra và ffuf sẽ ghi lại mã trạng thái và độ dài của từ khóa đó. Từ đó nếu những đầu ra nào có mã trạng thái và độ dài giống như trên sẽ bị lọc ra khỏi kết quả. Để làm được việc này ta dùng tùy chọn `-acc`
+```
+$ ffuf -u http://FUZZ.example.com/ -w ./wordlist -acc 'www'
+```
 ---
-### 16. Để ffuf gửi các request thông qua Burpsuite ta dùng tùy chọn `-replay-proxy`
+### 18. Để ffuf gửi các request thông qua Burpsuite ta dùng tùy chọn `-replay-proxy`
 ```
 $ ffuf -u http://example.com/FUZZ -w ./wordlist -replay-proxy http://127.0.0.1:8888
 ```
-### 17. Sử lý đầu ra của ffuf bằng tùy chọn `-s` kết hợp với lệnh `tee`
+### 19. Sử lý đầu ra của ffuf bằng tùy chọn `-s` kết hợp với lệnh `tee`
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -s | tee output.txt
 ```
-### 18. Fuzz các request bằng tùy chọn `-request`
+### 20. Fuzz các request bằng tùy chọn `-request`
 - Đầu tiên ta cần dùng Burpsuite để chặn các request được gửi đến máy chủ
 
 - Tiếp theo ta chọn 1 request > chuột phải > copy to file
@@ -142,16 +150,16 @@ $ ffuf -w wordlist.txt -u https://example.com/FUZZ -s | tee output.txt
 ```
 $ ffuf -w wordlist.txt -request file.txt
 ```
-### 19. Lưu đầu ra vào 1 file bằng tùy chọn `-o`
+### 21. Lưu đầu ra vào 1 file bằng tùy chọn `-o`
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZZ -o output.txt
 ```
-### 20. Fuzzing POST data với 2 tùy chọn `-X` và `-d`
+### 22. Fuzzing POST data với 2 tùy chọn `-X` và `-d`
 ```
 $ ffuf -w wordlist.txt -X POST -d "email=admin@gmail.com&FUZZ=test" -u http://example.com/
 ```
 - **Note:** Tùy chọn `-X` dùng để chỉ định một phương thức khác
-### 21. Hiển thị màu sắc cho output bằng cách dùng tùy chọn `-c`
+### 23. Hiển thị màu sắc cho output bằng cách dùng tùy chọn `-c`
 ```
 $ ffuf -w wordlist.txt -u https://example.com/FUZ -c
 ```
