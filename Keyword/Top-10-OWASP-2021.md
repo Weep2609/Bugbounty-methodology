@@ -25,5 +25,8 @@
 - Có thể hiểu đơn giản là mỗi khi gửi dữ liệu văn bản từ máy khách đến máy chủ ta cần được mã hóa dữ liệu bằng HTTPS    
 ### Top 3: Injection
 - Là một lớp lỗ hổng cho phép thực thi mã trên máy chủ hoặc trình duyệt web (sql injection, xss, rce, command injection,...)
+
 - Đối với máy chủ đó có thể là sql injection - lỗ hổng này cho phép chèn các câu lệnh truy vấn sql để lấy dữ liệu của người khác hoặc toàn bộ dữ liệu từ cơ sở dữ liệu của trang web
-- Đối với máy khách thì có thể là xss - lỗ hổng này cho phép thực thi html hoặc javascript đối với người dùng truy cập vào trang web cụ thể và bạn có thể kiếm soát hành vi của họ trong trang web đó
+
+- Đối với máy khách thì có thể là xss - lỗ hổng này cho phép thực thi html hoặc javascript đối với người dùng truy cập vào trang web cụ thể và bạn có thể kiếm soát hành vi của họ trong trang web đó (Điều hướng người dùng, thay đổi mật khẩu,...)
+### Top 4: Insecure Design
