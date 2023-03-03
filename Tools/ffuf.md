@@ -151,6 +151,10 @@ $ ffuf -w wordlist.txt -u https://example.com/FUZZ -o output.txt
 $ ffuf -w wordlist.txt -X POST -d "email=admin@gmail.com&FUZZ=test" -u http://example.com/
 ```
 - **Note:** Tùy chọn `-X` dùng để chỉ định một phương thức khác
+### 21. Hiển thị màu sắc cho output bằng cách dùng tùy chọn `-c`
+```
+$ ffuf -w wordlist.txt -u https://example.com/FUZ -c
+```
 ---
 ## B. Cách sử dụng nâng cao của ffuf
 
