@@ -3,10 +3,7 @@
 
 - Là 1 tổ chức phi lợi nhuận chuyên cung cấp các bài viết, phương pháp, tài liệu và công nghệ trong lĩnh vực bảo mật ứng dụng web
 ## Top 10 OWASP là gì ?
-- Là 1 dự án được cập nhật thường xuyên (mỗi 4 năm 1 lần) phác thảo về các mối đe dọa về bảo mật đối với các ứng dụng web
-
-- Top 10 lỗ hổng đó là: 
-
+- Là 1 dự án được cập nhật thường xuyên (mỗi 4 năm 1 lần) phác thảo về các mối đe dọa về bảo mật đối với các ứng dụng web. Top 10 lỗ hổng đó là: 
 - Top 1: Broken Access Control
 - Top 2: Cryptographic Failures
 - Top 3: Injection
