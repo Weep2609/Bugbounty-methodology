@@ -1,5 +1,6 @@
 ### Phương pháp 30 giờ học chuyên sâu dành cho cyber security
 B1: Chọn 1 kĩ năng mà ta muốn học
+
 B2: Hãy lập 1 kế hoạch để thử thách bản thân trong 30 giờ
 ```
 - Chia 30 giờ thành 7 giai đoạn và mỗi giai đoạn kéo dài 4 giờ
